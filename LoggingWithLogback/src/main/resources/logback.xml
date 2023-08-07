@@ -1,0 +1,33 @@
+<configuration>
+    <variable name="LOGS_DIR" value="out/logs"/>
+
+    <!-- Stop output INFO at start -->
+    <!-- As it won't show any start up logs, so consider commenting it out in case things are not working as expected
+    in order to see if there are any issues during start up -->
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener"/>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${LOGS_DIR}/application.log</file>
+
+        <encoder>
+            <pattern>%date %level [%thread] %logger{10} [%file:%line] -%kvp- %msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36}:%L -%kvp- %msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="ColorAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %green([%thread]) %highlight(%-5level) %logger{50}:%L - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <root level="DEBUG">
+        <appender-ref ref="FILE"/>
+<!--        <appender-ref ref="STDOUT"/>-->
+        <appender-ref ref="ColorAppender"/>
+    </root>
+</configuration>
