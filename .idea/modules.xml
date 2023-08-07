@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/LoggingWithLogback/LoggingWithLogback.iml" filepath="$PROJECT_DIR$/LoggingWithLogback/LoggingWithLogback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LoggingWithSlf4jSimple/LoggingWithSlf4jSimple.iml" filepath="$PROJECT_DIR$/LoggingWithSlf4jSimple/LoggingWithSlf4jSimple.iml" />
       <module fileurl="file://$PROJECT_DIR$/MasteringLogging.iml" filepath="$PROJECT_DIR$/MasteringLogging.iml" />
     </modules>
   </component>

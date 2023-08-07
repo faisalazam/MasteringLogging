@@ -18,15 +18,16 @@
   * [How to stop logback status INFO at the start of every log?](#how-to-stop-logback-status-info-at-the-start-of-every-log)
 <!-- TOC -->
 
+[Go to main](..)
 # Logging With Slf4j and Logback
 In this modules we'll configure [LOGBACK][logback-url] with [SLF4J][slf4j-url] for logging in a simple Java project.
 
 ## Required dependencies
 As this is a simple Java project and does not use any build tools like [Maven][maven-url] or [Gradle][gradle-url] etc., 
 so we'll have to add the required dependencies explicitly. Following are the dependencies required for logging:
-* [slf4j-api-xxx.jar][slf4j-api-url]
-* [logback-core-xxx.jar][logback-core-url]
-* [logback-classic-xxx.jar][logback-classic-url]
+* [slf4j-api-xxx.jar][slf4j-api-jar-url]
+* [logback-core-xxx.jar][logback-core-jar-url]
+* [logback-classic-xxx.jar][logback-classic-jar-url]
 
 ## Code for testing logs
 Following is the simple sample code to test different log levels:
@@ -68,7 +69,7 @@ If we want to customize logging in order to be able to:
 * enable/disable different log levels
 * etc.
 
-then we'll need to add the `logback.xml`` file somewhere on the classpath.
+then we'll need to add the `logback.xml` file somewhere on the classpath.
 
 ## Sample `logback.xml` file
 The following `logback.xml` can be placed in the `src/main/resources` folder:
@@ -218,6 +219,8 @@ in order to see if there are any issues during start up -->
 <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
 ```
 
+[Go to main](..)
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -225,7 +228,7 @@ in order to see if there are any issues during start up -->
 [logback-url]:https://logback.qos.ch/
 [maven-url]:https://maven.apache.org/
 [gradle-url]:https://gradle.org/
-[slf4j-api-url]:https://mvnrepository.com/artifact/org.slf4j/slf4j-api
-[logback-core-url]:https://mvnrepository.com/artifact/ch.qos.logback/logback-core
-[logback-classic-url]:https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
+[slf4j-api-jar-url]:https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+[logback-core-jar-url]:https://mvnrepository.com/artifact/ch.qos.logback/logback-core
+[logback-classic-jar-url]:https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
 [logback-manual-url]:http://logback.qos.ch/manual/configuration.html#joranDirectly
