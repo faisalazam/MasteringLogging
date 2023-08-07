@@ -1,3 +1,14 @@
+<!-- TOC -->
+* [Logging With Slf4j and Log4j2](#logging-with-slf4j-and-log4j2)
+  * [Required dependencies](#required-dependencies)
+  * [Code for testing logs](#code-for-testing-logs)
+  * [Customised Logging](#customised-logging)
+  * [Sample `log4j2.properties` file](#sample-log4j2properties-file)
+  * [Where should the configuration files such as `log4j2.properties` be located on the classpath?](#where-should-the-configuration-files-such-as-log4j2properties-be-located-on-the-classpath)
+  * [Why `log4j2.properties` or config file ignored or not picked up or doesn't work?](#why-log4j2properties-or-config-file-ignored-or-not-picked-up-or-doesnt-work)
+      * [For Maven](#for-maven)
+      * [For running the application in the IDE](#for-running-the-application-in-the-ide)
+<!-- TOC -->
 
 [Go to main](..)
 # Logging With Slf4j and Log4j2
