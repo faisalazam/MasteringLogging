@@ -11,10 +11,6 @@ out/
 .settings
 .springBeans
 .sts4-cache
-.fastRequest
-.idea/fastRequest
-.idea/jpa-buddy.xml
-.idea/uiDesigner.xml
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/

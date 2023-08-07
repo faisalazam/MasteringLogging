@@ -1,9 +1,9 @@
-## [Mastering Logging](https://faisalazam.github.io/MasteringLogging/)
 
 A tutorial like project to guide how to configure different logging frameworks for Java applications.
 
 * [Logging with SLF4J and LOGBACK](LoggingWithLogback): Implementation of the SLF4J API for Logback, a reliable, generic, fast and flexible logging framework.
 * [Logging with SLF4J and Slf4j-Simple](LoggingWithSlf4jSimple): Binding/provider for SLF4J, which outputs all events to System.err. Only messages of level INFO and higher are printed.
+* [Logging with SLF4J and Log4j](LoggingWithLog4j): API for Apache Log4J, a highly configurable logging tool that focuses on performance and low garbage generation. It has a plugin architecture that makes it extensible and supports asynchronous logging based on LMAX Disruptor.
 
 
 ## Troubleshooting
